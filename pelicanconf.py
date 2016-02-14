@@ -23,7 +23,7 @@ TIMEZONE = 'America/Bogota'
 # PELICAN - Defines whether Pelican should use document-relative URLs or not.
 #RELATIVE_URLS = True
 # PELICAN - List of templates that are used directly to render content.
-DIRECT_TEMPLATES = ('index')
+#DIRECT_TEMPLATES = ('index')
 # PELICAN - A list of directories (relative to PATH) in which to look for static files.
 STATIC_PATHS = ['images','php']
 
