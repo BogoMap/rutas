@@ -19,9 +19,9 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
     else {
       $headers = "From: $ouremail";
     }
-    // finally, send the message
+    // Finally, send the message
     mail($ouremail, 'Reporte de rutas.bogomap.co', $body, $headers );
-    header('Location: ../../index.html?message="Gracias por su reporte"');
+    header('Location: ../../index.html?message="Gracias por tu reporte"');
   }
   else {
     header('Location: ../../index.html?message="Mensaje no enviado"');
