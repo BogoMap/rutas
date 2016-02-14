@@ -94,7 +94,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 # https://github.com/alexandrevicenzi/Flex/wiki
 
 # FLEX - Profile picture to show above author name (absolute url).
-SITELOGO = '/images/mapanica-rutas.png'
+SITELOGO = '/images/bogomap-rutas.png'
 # FLEX - Site description to use in meta tags.
 SITEDESCRIPTION = 'Mapa de rutas y paraderos que conforman el sistema de transporte de Bogota'
 # FLEX - language_TERRITORY for Open Graph.
