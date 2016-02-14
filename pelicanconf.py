@@ -32,9 +32,9 @@ STATIC_PATHS = ['images','php']
 # PELICAN - The location to save the article archives page.
 ARCHIVES_SAVE_AS = False
 # PELICAN - The location to save an author.
-AUTHOR_SAVE_AS = False
+#AUTHOR_SAVE_AS = False
 # PELICAN - The location to save a category.
-CATEGORY_SAVE_AS = False
+#CATEGORY_SAVE_AS = False
 # PELICAN - The URL we will use to link to a page.
 PAGE_URL = '{slug}/'
 # PELICAN - The location we will save the page.
@@ -75,8 +75,9 @@ THEME = 'themes/mombacho'
 # PELICAN - A subtitle to appear in the header.
 SITESUBTITLE = 'Rutas y paraderos del SITP y Transmilenio'
 # PELICAN - A list of tuples (Title, URL) for additional menu items to appear at the beginning of the main menu.
-MENUITEMS = (('BogoMap', 'http://bogomap.co', 'map'),
-             ('Rutas BogoMap', '/index.html', 'public-transport'))
+ #MENUITEMS = (('BogoMap', 'http://bogomap.co', 'map'),
+ #             ('Rutas BogoMap', '/index.html', 'public-transport'),
+ #             )
 # PELICAN - A list of tuples (Title, URL) to appear in the “social” section.
 SOCIAL = (('envelope-o', 'mailto:contacto@bogomap.co'),
           ('facebook', 'http://www.facebook.com/BogoMap'),
@@ -84,10 +85,8 @@ SOCIAL = (('envelope-o', 'mailto:contacto@bogomap.co'),
           )
 # Blogroll
 # PELICAN - A list of tuples (Title, URL) for links to appear on the header.
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+#LINKS = (('Pelican', 'http://getpelican.com/'),
+#         ('You can modify those links in your config file', '#'),)
 
 
 ### FLEX theme properties
