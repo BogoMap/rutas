@@ -103,5 +103,8 @@ OG_LOCALE = u'es_CO'
 CC_LICENSE = { 'name': 'Creative Commons Attribution-ShareAlike', 'version':'4.0', 'slug': 'by-sa' }
 # FLEX - Robots meta tag value.
 ROBOTS = 'index, follow'
-
+# FLEX - 
+FAVICON = '/images/favicon.ico'
+# FLEX -
+USE_LESS = True
 
