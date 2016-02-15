@@ -26,6 +26,11 @@ script:
   - mv leaflet.js js
   - cd ../../..
 
+  # Retrieves Less library
+  - cd themes/mombacho/static/js
+  - wget https://github.com/less/less.js/archive/v2.5.1.tar.gz ; tar -xvf v2.5.1.tar.gz
+  - cd ../../../..
+
   # Generates the package
   - pelican
 
