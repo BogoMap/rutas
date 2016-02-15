@@ -15,6 +15,7 @@ script:
   - mv Flex-1.1/templates/partial/* mombacho/templates/partial/ ; rmdir Flex-1.1/templates/partial/
   - mv Flex-1.1/templates/* mombacho/templates/ ; rmdir Flex-1.1/templates/
   - mv Flex-1.1/* mombacho
+  - rm -Rf Flex-1.1/
   - cd ..
 
   # Retrieves Leaflet library
