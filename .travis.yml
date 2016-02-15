@@ -8,33 +8,46 @@ install:
 
 script:
   # Retrieves the Flex template
-  - cd themes
-  - wget https://github.com/alexandrevicenzi/Flex/archive/v1.1.tar.gz ; tar -xvf v1.1.tar.gz ; 
+  - cd themes/
+  - wget https://github.com/alexandrevicenzi/Flex/archive/v1.1.tar.gz ; tar -xvf v1.1.tar.gz ; rm v1.1.tar.gz
   - mv Flex-1.1/static/css/* mombacho/static/css/ ; rmdir Flex-1.1/static/css/
   - mv Flex-1.1/static/* mombacho/static/ ; rmdir Flex-1.1/static/
   - mv Flex-1.1/templates/partial/* mombacho/templates/partial/ ; rmdir Flex-1.1/templates/partial/
   - mv Flex-1.1/templates/* mombacho/templates/ ; rmdir Flex-1.1/templates/
-  - mv Flex-1.1/* mombacho
+  - mv Flex-1.1/* mombacho/
   - rm -Rf Flex-1.1/
-  - cd ..
+  - cd ../
 
   # Retrieves Leaflet library
-  - cd themes/mombacho/static
-  - wget http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.zip ; unzip leaflet.zip
-  - mv images css
-  - mv leaflet.css css
-  - mv leaflet.js js
-  - cd ../../..
+  - cd themes/mombacho/static/
+  - wget http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.zip ; unzip leaflet.zip ; rm leaflet.zip
+  - mv images css/
+  - mv leaflet.css css/
+  - mv leaflet.js js/
+  - cd ../../../
+
+  # Retrieves Leaflet ActiveLayers library
+  - cd themes/mombacho/static/js/
+  - mkdir leaflet ; cd leaflet
+  - wget https://github.com/vogdb/Leaflet.ActiveLayers/archive/0.2.0.tar.gz ; tar -xvf 0.2.0.tar.gz ; rm 0.2.0.tar.gz
+  - mv Leaflet.ActiveLayers-0.2.0/src/ActiveLayers.js ./
+  - rm -Rf Leaflet.ActiveLayers-0.2.0
+  - cd ../../../../
+
+  # Retrieves Leaflet ajax
+  - cd themes/mombacho/static/js/leaflet
+  - wget https://github.com/calvinmetcalf/leaflet-ajax/archive/v2.0.0.tar.gz ; tar -xvf v2.0.0.tar.gz ; rm v2.0.0.tar.gz 
+  
 
   # Retrieves Less library
-  - cd themes/mombacho/static/js
-  - wget https://github.com/less/less.js/archive/v2.5.1.tar.gz ; tar -xvf v2.5.1.tar.gz
-  - cd ../../../..
+  - cd themes/mombacho/static/js/
+  - wget https://github.com/less/less.js/archive/v2.5.1.tar.gz ; tar -xvf v2.5.1.tar.gz ; rm v2.5.1.tar.gz
+  - mv less.js-2.5.1/dist/less.min.js ./
+  - rm -Rf less.js-2.5.1
+  - cd ../../../../
 
   # Generates the package
   - pelican
 
-  - curl http://169.254.169.254/latest/meta-data/public-ipv4
-  - make html
-  - make serve
+  - find .
 
