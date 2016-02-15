@@ -37,7 +37,12 @@ script:
   # Retrieves Leaflet ajax
   - cd themes/mombacho/static/js/leaflet
   - wget https://github.com/calvinmetcalf/leaflet-ajax/archive/v2.0.0.tar.gz ; tar -xvf v2.0.0.tar.gz ; rm v2.0.0.tar.gz 
-  
+  - cd ../../../../
+
+  # Retrieves Leaflet label
+  - cd themes/mombacho/static/js/leaflet
+  - wget https://github.com/Leaflet/Leaflet.label/archive/0.2.1.tar.gz ; tar -xvf 0.2.1.tar.gz ; rm 0.2.1.tar.gz
+  - cd ../../../../
 
   # Retrieves Less library
   - cd themes/mombacho/static/js/
