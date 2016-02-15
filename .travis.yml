@@ -10,10 +10,10 @@ script:
   # Retrieves the Flex template
   - cd themes
   - wget https://github.com/alexandrevicenzi/Flex/archive/v1.1.tar.gz ; tar -xvf v1.1.tar.gz ; 
-  - mv Flex-1.1/static/css/* mombacho/static/css/
-  - mv Flex-1.1/static/* mombacho/static/
-  - mv Flex-1.1/templates/partial/* mombacho/templates/partial/
-  - mv Flex-1.1/templates/* mombacho/templates/
+  - mv Flex-1.1/static/css/* mombacho/static/css/ ; rmdir Flex-1.1/static/css/
+  - mv Flex-1.1/static/* mombacho/static/ ; rmdir Flex-1.1/static/
+  - mv Flex-1.1/templates/partial/* mombacho/templates/partial/ ; rmdir Flex-1.1/templates/partial/
+  - mv Flex-1.1/templates/* mombacho/templates/ ; rmdir Flex-1.1/templates/
   - mv Flex-1.1/* mombacho
   - cd ..
 
